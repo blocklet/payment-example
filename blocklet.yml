@@ -1,0 +1,61 @@
+name: did-pay-example
+title: Payment Examples
+description: Examples to show developers how to use payment-kit
+keywords:
+  - example
+  - payment
+group: dapp
+did: z8ia4Lji4MXb2xUG7ZDD6tESkwAD9u4duKcsX
+main: api/index.js
+author:
+  name: polunzh
+  email: polunzh@gmail.com
+repository:
+  type: git
+  url: git+https://github.com/blocklet/payment-kit.git
+specVersion: 1.2.8
+version: 1.15.13
+logo: logo.png
+files:
+  - dist
+  - logo.png
+  - screenshots
+interfaces:
+  - type: web
+    name: publicUrl
+    path: /
+    prefix: '*'
+    port: BLOCKLET_PORT
+    protocol: http
+community: ''
+documentation: ''
+homepage: ''
+license: ''
+payment:
+  price: []
+  share: []
+timeout:
+  start: 60
+requirements:
+  server: '>=1.6.29'
+  os: '*'
+  cpu: '*'
+scripts:
+  dev: npm run start
+  preStart: node api/hooks/pre-start.js
+environments: []
+capabilities:
+  navigation: true
+  clusterMode: false
+  component: true
+screenshots: []
+navigation:
+  - id: purchase
+    title:
+      en: Purchase
+      zh: 购买
+    link: /
+    icon: mdi:cart-plus
+    section:
+      - header
+components: []
